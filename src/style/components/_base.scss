@@ -1,0 +1,43 @@
+h1,
+.h1 {
+  font-family: "Vina Sans", sans-serif;
+  line-height: 1.38;
+
+  @media (min-width: 768px) {
+    font-size: 40px;
+  }
+}
+
+h2,
+.h2 {
+  line-height: 1.4;
+
+  @media (min-width: 768px) {
+    font-size: 25px;
+  }
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 5px;
+  line-height: normal;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+// Make children of columns have the same height
+//      <div class="row col--eq-height">
+.col--eq-height {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    display: flex !important;
+    width: 100%;
+
+    > * {
+      width: 100%;
+    }
+  }
+}

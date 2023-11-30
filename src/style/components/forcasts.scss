@@ -1,0 +1,60 @@
+.Weather {
+  &__Forcast {
+    padding: 10px 0;
+  }
+
+  &__ForcastList {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: 768px) {
+      gap: 20px;
+      flex-direction: row;
+    }
+  }
+
+  &__ForcastItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    padding: 20px;
+    list-style: none;
+    gap: 5px;
+
+    p {
+      font-size: 14px;
+    }
+    &:not(:last-child) {
+      &:after {
+        content: "";
+        display: block;
+        background-color: #ddd;
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+      }
+    }
+    @media (min-width: 768px) {
+      padding: 0 40px;
+      &:not(:last-child) {
+        &:after {
+          width: 1px;
+          height: 100%;
+          top: 0;
+          right: 0;
+          bottom: unset;
+        }
+      }
+    }
+  }
+
+  &__ForcastDay {
+    font-weight: 700;
+  }
+}
