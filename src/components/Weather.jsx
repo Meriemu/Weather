@@ -72,8 +72,6 @@ const Weather =   () => {
 
   const description =  listingWeather[0] && listingWeather[0]?.weather &&  listingWeather[0] && listingWeather[0].weather.length > 0 &&  listingWeather[0] && listingWeather[0].weather[0]?.description && ( listingWeather[0] && listingWeather[0].weather[0]?.description);
 
-console.log("-----------------",  listingWeather  && listingWeather)
-
   return (
     <>
       {

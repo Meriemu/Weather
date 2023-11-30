@@ -8,7 +8,6 @@
       height: 100vh;
       align-items: center;
       justify-content: center;
-      // margin: 50px auto 0;
     }
   }
   &__BoxData {
@@ -47,7 +46,6 @@
     padding: 30px;
     background: dodgerblue;
     order: 2;
-    //  height: 50%;
 
     &:after {
       content: "";
@@ -66,7 +64,6 @@
 
     @media (min-width: 768px) {
       flex: 1 0 70%;
-      // height: 100%;
       padding: 50px;
       order: 1;
     }
@@ -78,7 +75,6 @@
     align-items: center;
     justify-content: center;
     order: 1;
-    //  height: 50%;
     background: deepskyblue;
 
     &:after {
@@ -98,7 +94,6 @@
 
     @media (min-width: 768px) {
       flex: 1 0 30%;
-      // height: auto;
       order: 2;
     }
   }
@@ -125,7 +120,6 @@
   //   -----Data weather center
   &__Temp {
     font-size: 50px;
-    //  font-family: "Vina Sans", sans-serif;
     font-family: "Russo One", sans-serif;
   }
 
